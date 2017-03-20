@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Winter Scarves</title>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  
+ <script src="https://use.fontawesome.com/3ee00991dc.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Winter Wear Warehouse</h1>
+  </header>  
+    
+  <div>
+    <nav>
+      <ul>
+        <li><a href="#">Hats</a></li>
+        <li><a href="#">Gloves</a></li>
+        <li><a href="#">Scarves</a></li>
+        <li class="cart-info">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>  
+
+  <aside>
+    <form>
+      <label>Filter By:
+        <select name="filter">
+          <option value="">Choose One</option>
+          <option value="price">Price</option>
+          <option value="name">Name</option>
+        </select>
+      </label>
+
+      <input type="submit" value="Sort">
+    </form>
+  </aside>
+
+  <section>
+    <h2>Scarves</h2>
+
+    <div class="item-container">
+      <div class="item">
+        <h3 class="product-name">Ashby Twill</h3>
+        <img  sizes="(max-width: 800px) 200px, (max-width: 1600px) 400px, (min-width: 1601px) 800px"
+              src="images/twill.jpg"
+              srcset = "images/twill.jpg" 50%
+              alt="scarf">
+        <p class="description">The raddest twill scarf known to mankind.</p>
+        <p class="price-text">$3,234,442.99</p>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
