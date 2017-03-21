@@ -1,13 +1,15 @@
-.item img {
-  max-width: 25%;
-}
-
 .item-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: space-around;
 }
 
 div.item {
-  width: 300px;
+  width: 30%;
+}
+
+.item img {
+  object-fit: contain;
+  width: 100%;
 }
