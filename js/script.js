@@ -63,3 +63,6 @@ function capture() {
   console.log(document.filteryBy.filter.value);
   event.preventDefault();
 }
+
+var cart = [];
+//this is gonna hold all my shtuff//
