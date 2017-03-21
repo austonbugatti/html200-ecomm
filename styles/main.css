@@ -1,3 +1,13 @@
 .item img {
   max-width: 25%;
 }
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.item {
+  width: 300px;
+}

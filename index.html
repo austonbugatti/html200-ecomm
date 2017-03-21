@@ -2,35 +2,58 @@
 <html lang="en">
 <head>
   <title>Winter Scarves</title>
-
   <meta charset="utf-8">
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
   
  <script src="https://use.fontawesome.com/3ee00991dc.js"></script>
-</head>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 
+  
+  </head>
   <header>
     <h1>Winter Wear Warehouse</h1>
-  </header>  
-    
-  <div>
-    <nav>
-      <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
+  </header> 
+  
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Hats</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Gloves<span class="sr-only">(current)</span></a></li>
         <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </li>
+        <li><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>
       </ul>
-    </nav>
-  </div>  
+      
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ 
+<body>
 
   <aside>
-    <form>
+    <form name="filterBy">
       <label>Filter By:
         <select name="filter">
           <option value="">Choose One</option>
@@ -45,7 +68,6 @@
 
   <section>
     <h2>Scarves</h2>
-
     <div class="item-container">
       <div class="item">
         <h3 class="product-name">Ashby Twill</h3>
@@ -56,7 +78,53 @@
         <p class="description">The raddest twill scarf known to mankind.</p>
         <p class="price-text">$3,234,442.99</p>
       </div>
+      <div class="item">
+        <h3 class="product-name">Ashby Twill</h3>
+        <img  sizes="(max-width: 800px) 200px, (max-width: 1600px) 400px, (min-width: 1601px) 800px"
+              src="images/twill.jpg"
+              srcset = "images/twill.jpg" 50%
+              alt="scarf">
+        <p class="description">The raddest twill scarf known to mankind.</p>
+        <p class="price-text">$3,234,442.99</p>
+      </div>
+      <div class="item">
+        <h3 class="product-name">Ashby Twill</h3>
+        <img  sizes="(max-width: 800px) 200px, (max-width: 1600px) 400px, (min-width: 1601px) 800px"
+              src="images/twill.jpg"
+              srcset = "images/twill.jpg" 50%
+              alt="scarf">
+        <p class="description">The raddest twill scarf known to mankind.</p>
+        <p class="price-text">$3,234,442.99</p>
+      </div>
+      <div class="item">
+        <h3 class="product-name">Ashby Twill</h3>
+        <img  sizes="(max-width: 800px) 200px, (max-width: 1600px) 400px, (min-width: 1601px) 800px"
+              src="images/twill.jpg"
+              srcset = "images/twill.jpg" 50%
+              alt="scarf">
+        <p class="description">The raddest twill scarf known to mankind.</p>
+        <p class="price-text">$3,234,442.99</p>
+      </div>
+      <div class="item">
+        <h3 class="product-name">Ashby Twill</h3>
+        <img  sizes="(max-width: 800px) 200px, (max-width: 1600px) 400px, (min-width: 1601px) 800px"
+              src="images/twill.jpg"
+              srcset = "images/twill.jpg" 50%
+              alt="scarf">
+        <p class="description">The raddest twill scarf known to mankind.</p>
+        <p class="price-text">$3,234,442.99</p>
+      </div>
+      <div class="item">
+        <h3 class="product-name">Ashby Twill</h3>
+        <img  sizes="(max-width: 800px) 200px, (max-width: 1600px) 400px, (min-width: 1601px) 800px"
+              src="images/twill.jpg"
+              srcset = "images/twill.jpg" 50%
+              alt="scarf">
+        <p class="description">The raddest twill scarf known to mankind.</p>
+        <p class="price-text">$3,234,442.99</p>
+      </div>
     </div>
+    
   </section>
 
   <script type="text/javascript" src="js/script.js"></script>

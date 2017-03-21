@@ -58,3 +58,8 @@ function printAllProducts() {
     printProduct(products[i]);
   }
 } printAllProducts();
+
+function capture() {
+  console.log(document.filteryBy.filter.value);
+  event.preventDefault();
+}
