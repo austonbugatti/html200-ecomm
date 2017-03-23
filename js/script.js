@@ -1,7 +1,8 @@
+
 var products = [
   {
     "name": "Reversible Plaid",
-    "price": 26.99,
+    "price": 46.99,
     "description": "Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.",
     "imageTitle": "reversible-plaid.jpg"
   },
@@ -49,21 +50,60 @@ var products = [
   }
   ]
 
+
+var cart = []
+
+  for (var key in products) {
+  console.log(products[key].name);
+  console.log(products[key].description);
+  console.log(products[key].price);
+}
+
+function addRemoveCart(item){
+  var index = cart.indexOf(item);
+  if(index < 0){
+    cart.push(item);
+  } else {
+    cart.splice(index, 1);
+  }
+  console.log(cart.length);
+
+  document.getElementById("cartTotal").innerHTML = "<span>(" + cart.length + ")</span>";
+  event.preventDefault();
+}
+
+
+function compareName(a, b){
+  if(a.name.toLowerCase() < b.name.toLowerCase())
+    return - 1;
+  if(a.name.toLowerCase() > b.name.toLowerCase())
+    return 1;
+  return 0;
+}
+
+function comparePrice(a, b){
+  return a.price - b.price;
+}
+
+function listCart () {
+   var cartCopy = [];
+   for (var i in cart) {
+     var item = cart[i];
+     var itemCopy = {};
+     for (var p in item) {
+       itemCopy[p] = item[p];
+     }
+     itemCopy.total = item.price * item.count;
+     cartCopy.push(itemC.opy);
+   }
+   return cartCopy;
+ }
+
 function printProduct(products) {
   console.log(products.name + ", " + products.description + ", " + products.price);
 }
 
-function printAllProducts() {
-  for (var i = 0; i < products.length; i++) {
-    printProduct(products[i]);
-  }
-} printAllProducts();
 
-function capture() {
-  console.log(document.filteryBy.filter.value);
-  event.preventDefault();
-}
 
-var cart = [];
-//this is gonna hold all my shtuff//
-//comment//
+
+

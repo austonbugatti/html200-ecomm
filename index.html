@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
   
- <script src="https://use.fontawesome.com/3ee00991dc.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   
+  <script src="https://use.fontawesome.com/3ee00991dc.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -41,7 +43,9 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Gloves<span class="sr-only">(current)</span></a></li>
         <li><a href="#">Scarves</a></li>
-        <li><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+        <span id="cartTotal"></span>
+        </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -53,7 +57,7 @@
 <body>
 
   <aside>
-    <form name="filterBy">
+    <form name="filterBy" onsubmit="filterProducts();">
       <label>Filter By:
         <select name="filter">
           <option value="">Choose One</option>
@@ -62,7 +66,7 @@
         </select>
       </label>
 
-      <input type="submit" value="Sort">
+      <input type="submit" value="Go">
     </form>
   </aside>
 
@@ -77,7 +81,7 @@
               alt="scarf">
         <p class="description">The raddest twill scarf known to mankind.</p>
         <p class="price-text">$3,234,442.99</p>
-        <input type="Submit" value="Add To Cart">
+        <input type="button" name="addRemoveCart" value="Add/Remove Cart">
       </div>
       <div class="item">
         <h3 class="product-name">Ashby Twill</h3>
@@ -87,7 +91,7 @@
               alt="scarf">
         <p class="description">The raddest twill scarf known to mankind.</p>
         <p class="price-text">$3,234,442.99</p>
-        <input type="Submit" value="Add To Cart">
+        <input type="button" name="addRemoveCart" value="Add/Remove Cart">
       </div>
       <div class="item">
         <h3 class="product-name">Ashby Twill</h3>
@@ -97,7 +101,7 @@
               alt="scarf">
         <p class="description">The raddest twill scarf known to mankind.</p>
         <p class="price-text">$3,234,442.99</p>
-        <input type="Submit" value="Add To Cart">
+        <input type="button" name="addRemoveCart" value="Add/Remove Cart">
       </div>
       <div class="item">
         <h3 class="product-name">Ashby Twill</h3>
@@ -107,7 +111,7 @@
               alt="scarf">
         <p class="description">The raddest twill scarf known to mankind.</p>
         <p class="price-text">$3,234,442.99</p>
-        <input type="Submit" value="Add To Cart">
+        <input type="button" name="addRemoveCart" value="Add/Remove Cart">
       </div>
       <div class="item">
         <h3 class="product-name">Ashby Twill</h3>
@@ -117,7 +121,7 @@
               alt="scarf">
         <p class="description">The raddest twill scarf known to mankind.</p>
         <p class="price-text">$3,234,442.99</p>
-        <input type="Submit" value="Add To Cart">
+        <input type="button" name="addRemoveCart" value="Add/Remove Cart">
       </div>
       <div class="item">
         <h3 class="product-name">Ashby Twill</h3>
@@ -127,13 +131,12 @@
               alt="scarf">
         <p class="description">The raddest twill scarf known to mankind.</p>
         <p class="price-text">$3,234,442.99</p>
-        <input type="Submit" value="Add To Cart">
+        <input type="button" name="addRemoveCart" value="Add/Remove Cart">
       </div>
     </div>
     
   </section>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  
 </body>
 </html>
-//sd//
