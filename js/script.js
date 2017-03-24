@@ -50,7 +50,6 @@ var products = [
   }
   ]
 
-
 var cart = []
 
   for (var key in products) {
